@@ -1,12 +1,12 @@
 <div class="message-card">
 <div class="message-content">
-    <div class="message-user">
-        <div class="message-user-icon">
-            <%= message.user%>
+    <div class="message-info">
+        <div class="message-user">
+            <div class="message-user-icon"><%= message.user %></div>
+            <p class="message-username">User: <%= message.user %></p>
         </div>
-        <p class="message-username">User: <%= message.user%></p>
+        <p class="message-date"><%= message.added %></p>
     </div>
-    <p class="message-text"><%= message.text></p>
-    <p class="message-date"><%= message.added%></p>
+    <p class="message-text"><%= message.text %></p>
 </div>
 </div>
