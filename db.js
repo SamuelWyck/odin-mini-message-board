@@ -1,15 +1,16 @@
+const {format} = require("date-fns");
 
-
+const formatString = "MMM d y";
 const messages = [
     {
         text: "Hi there!",
         user: "Amando",
-        added: new Date(),
+        added: format(new Date(), formatString),
     },
     {
         text: "Hello World!",
         user: "Charles",
-        added: new Date(),
+        added: format(new Date(), formatString),
     },
 ];
 
@@ -23,7 +24,7 @@ async function addMessage(text, user) {
         {
             text: text,
             user: user,
-            added: new Date(),
+            added: format(new Date(), formatString),
         }
     );
     return true;
