@@ -17,6 +17,11 @@ app.use(express.urlencoded({extended: true}));
 app.use("/", indexRouter);
 
 
+app.use(function(error, req, res, next) {
+    res.redirect("/");
+});
+
+
 
 const PORT = process.env.PORT || 3000;
 
