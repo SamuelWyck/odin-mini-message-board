@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>New Message</title>
+</head>
+<body>
+<div id="root">
+    <%- include("header")%>
+    <main>
+    <div class="form-section">
+        <form action="/new" method="POST">
+            <div>
+            <div>
+                <label for="username">Name</label>
+                <input type="text" name="user" id="username">
+            </div>
+            <div>
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date" value="<%= date %>" disabled>
+            </div>
+            </div>
+            <textarea name="text" id="text"></textarea>
+            <div>
+                <button type="submit">Post</button>
+            </div>
+        </form>
+    </div>
+    </main>
+</div>
+</body>
+</html>
