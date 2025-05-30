@@ -52,6 +52,14 @@ async function deleteMessage(id) {
     messages = newMessages;
 };
 
+async function getMessage(id) {
+    for (let message of messages) {
+        if (message.id === id) {
+            return message;
+        }
+    }
+};
+
 
 module.exports = {
     getAllMessages,
