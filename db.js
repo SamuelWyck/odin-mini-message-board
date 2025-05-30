@@ -64,5 +64,6 @@ async function getMessage(id) {
 module.exports = {
     getAllMessages,
     addMessage,
-    deleteMessage
+    deleteMessage,
+    getMessage
 };
