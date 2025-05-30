@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Message <%= message.id %></title>
+</head>
+<body>
+<div id="root">
+    <%- include("header")%>
+    <main>
+    <div class="message-details">
+        <div class="message-metadata">
+            <p><span class="bolden">Message ID: </span><%= message.id %></p>
+            <p><span class="bolden">Posted by: </span><%= message.user %></p>
+            <p><span class="bolden">Posted on: </span><%= message.added %></p>
+        </div>
+        <p class="message-content"><%= message.text %></p>
+    </div>
+    </main>
+</div>
+</body>
+</html>
