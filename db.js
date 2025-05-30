@@ -29,13 +29,13 @@ async function getAllMessages() {
     return messages;
 };
 
-async function addMessage(text, user) {
+async function addMessage(text, user, date) {
     messages.push(
         {
             id: getId(),
             text: text,
             user: user,
-            added: format(new Date(), formatString),
+            added: format(date, formatString),
         }
     );
     return true;
