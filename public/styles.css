@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: "roboto", sans-serif;
+}
+
+#root {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: #DAFFEF;
+    overflow: hidden;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fefefe;
+    background-color: #2E282A;
+    padding: .5rem;
+    text-decoration: underline;
+    padding-bottom: .7rem;
+}
+
+.mini {
+    display: inline-block;
+    transform: rotate(-10deg) translateX(-3px);
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+header > nav {
+    display: flex;
+    gap: 4rem;
+}
+
+header > nav > a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #2E282A;
+}
+
+header > nav > a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (width <= 450px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 0 1rem 0;
+    }
+
+    header > .logo {
+        width: 100%;
+        text-align: center;
+    }
+}
