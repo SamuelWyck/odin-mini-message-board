@@ -1,10 +1,10 @@
-<a href="message/<%= message.id %>">
+<a class="message-link" href="message/<%= message.id %>">
 <div class="message-card">
 <div class="message-content">
     <div class="message-info">
         <div class="message-user">
-            <div class="message-user-icon"><%= message.user %></div>
-            <p class="message-username">User: <%= message.user %></p>
+            <div class="message-user-icon"><p><%= message.user %></p></div>
+            <p class="message-username"><%= message.user %></p>
         </div>
         <p class="message-date"><%= message.added %></p>
     </div>

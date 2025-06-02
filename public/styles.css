@@ -58,6 +58,67 @@ header > nav > a:hover {
     text-decoration: underline;
 }
 
+main {
+    background-color: #2E282A;
+    color: #fefefe;
+}
+
+a.message-link {
+    text-decoration: none;
+    color: #fefefe;
+}
+
+.messages {
+    display: grid;
+    gap: 4rem;
+    max-width: 600px;
+    margin: 4rem auto;
+}
+
+.message-card {
+    background-color: #DAFFEF;
+    color: #2E282A;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.message-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.message-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+}
+
+.message-user-icon {
+    font-size: 2rem;
+    font-weight: normal;
+    background-color: #2E282A;
+    color: #fefefe;
+    padding: .4rem .9rem .5rem 1rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.message-user-icon > p {
+    width: 1.2ch;
+    overflow: hidden;
+}
+
+.message-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-text {
+    align-self: center;
+    margin: 1rem ;
+}
+
 @media screen and (width <= 450px) {
     header {
         flex-direction: column;
