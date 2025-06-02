@@ -99,14 +99,8 @@ a.message-link {
     font-weight: normal;
     background-color: #2E282A;
     color: #fefefe;
-    padding: .4rem .9rem .5rem 1rem;
-    text-align: center;
+    padding: .5rem 1rem;
     border-radius: 50%;
-}
-
-.message-user-icon > p {
-    width: 1.2ch;
-    overflow: hidden;
 }
 
 .message-content {

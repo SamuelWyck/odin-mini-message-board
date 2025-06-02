@@ -7,12 +7,14 @@ const messages = [
         text: "Hi there!",
         user: "Amando",
         added: format(new Date(), formatString),
+        icon: "A",
     },
     {
         id: 1,
         text: "Hello World!",
         user: "Charles",
         added: format(new Date(), formatString),
+        icon: "C",
     },
 ];
 
@@ -36,6 +38,7 @@ async function addMessage(text, user, date) {
             text: text,
             user: user,
             added: format(date, formatString),
+            icon: user[0].toUpperCase()
         }
     );
     return true;
