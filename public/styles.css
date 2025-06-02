@@ -68,6 +68,10 @@ a.message-link {
     color: #fefefe;
 }
 
+a.message-link:hover {
+    transform: scale(1.1);
+}
+
 .messages {
     display: grid;
     gap: 4rem;
@@ -113,6 +117,75 @@ a.message-link {
     margin: 1rem ;
 }
 
+.form-section {
+    max-width: 600px;
+    margin: 4rem auto;
+    background-color: #DAFFEF;
+    color: #2E282A;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+form > :first-child {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+}
+
+form input {
+    font-family: "roboto",  sans-serif;
+    font-size: 1rem;
+    outline: none;
+    padding: .3rem;
+    height: 3ch;
+    width: 100%;
+    background-color: #2E282A;
+    color: #fefefe;
+    border-radius: 10px;
+}
+
+form textarea {
+    border-radius: 10px;
+    margin-top: 3rem;
+    outline: none;
+    width: 100%;
+    height: 18ch;
+    padding: .4rem .2rem;
+    font-family: "roboto",  sans-serif;
+    font-size: 1rem;
+    background-color: #2E282A;
+    color: #fefefe;
+}
+
+form > :last-child {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+form button {
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: "roboto", sans-serif;
+    border: 2px solid #2E282A;
+    border-radius: 10px;
+    background-color: #2E282A;
+    color: #fefefe;
+    padding: .5rem 1rem;
+}
+
+form button:hover {
+    background-color: #DAFFEF;
+    color: #2E282A;
+}
+
 @media screen and (width <= 450px) {
     header {
         flex-direction: column;
@@ -123,5 +196,15 @@ a.message-link {
     header > .logo {
         width: 100%;
         text-align: center;
+    }
+
+    .form-section {
+        padding: 2rem 1rem;
+    }
+}
+
+@media screen and (width <= 770px) {
+    a.message-link:hover {
+        transform: scale(1);
     }
 }
