@@ -6,6 +6,8 @@ const dateFormat = "yyyy-MM-dd";
 const frontEndDateFormat = "Mon dd yyyy";
 
 async function getAllMessages() {
+    console.log("getallmessages")
+    console.log(process.env.DB)
     const {rows} = await pool.query(
         "SELECT id, username, TO_CHAR(date, $1) AS date, text, icon FROM messages",
         [frontEndDateFormat]
