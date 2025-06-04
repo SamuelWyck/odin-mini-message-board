@@ -1,5 +1,5 @@
 const asyncHandler = require("express-async-handler");
-const db = require("../db.js");
+const db = require("../db/querys.js");
 
 
 const addNewMessage = asyncHandler(async function(req, res) {
@@ -11,11 +11,7 @@ const addNewMessage = asyncHandler(async function(req, res) {
         return;
     }
     
-    const success = await db.addMessage(text, user, new Date());
-
-    if (!success) {
-        throw new Error("Server error");
-    }
+    await db.addMessage(text, user, new Date());
 
     res.redirect("/");
 });

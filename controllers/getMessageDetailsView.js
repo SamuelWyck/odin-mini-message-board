@@ -1,5 +1,5 @@
 const asyncHandler = require("express-async-handler");
-const db = require("../db.js");
+const db = require("../db/querys.js");
 
 
 
